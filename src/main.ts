@@ -1,5 +1,4 @@
 import './style.css'
-
 ;(() => {
   const btn = document.getElementById('btnMenu')
   const menu = document.getElementById('mobileMenu')
@@ -20,7 +19,7 @@ import './style.css'
     btn.setAttribute('aria-expanded', String(!isOpen))
     if (!isOpen) {
       const firstLink = menu.querySelector('a')
-      firstLink && firstLink.focus()
+      firstLink?.focus()
     }
   })
 
