@@ -8,21 +8,58 @@
     <title>Gaia Cogumelos | Fornecimento B2B de Ganoderma lucidum desidratado e em pó</title>
     <meta name="description" content="Gaia Cogumelos fornece matéria-prima B2B de Ganoderma lucidum (Reishi) desidratado e em pó, com rastreabilidade e padrão de qualidade consistente para indústrias de suplementos e extratos." />
     <link rel="canonical" href="https://www.gaiacogumelos.com.br/" />
+    
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="ganoderma lucidum, reishi, cogumelos medicinais, fornecimento B2B, matéria prima, suplementos, extratos, nutracêuticos, cogumelos desidratados, pó de reishi, Paulínia, São Paulo" />
+    
+    <!-- Business Info -->
+    <meta name="author" content="Gaia Cogumelos" />
+    <meta name="company" content="Gaia Cogumelos" />
+    <meta name="geo.region" content="BR-SP" />
+    <meta name="geo.placename" content="Paulínia, São Paulo, Brasil" />
+    <meta name="geo.position" content="-22.7209;-47.1540" />
+    <meta name="ICBM" content="-22.7209, -47.1540" />
+    
+    <!-- Business Schema -->
+    <meta name="business.hours" content="Mo-Fr 08:00-17:00" />
+    <meta name="business.phone" content="+55 (00) 0000-0000" />
+    <meta name="business.email" content="comercial@gaiacogumelos.com.br" />
 
-    <!-- Open Graph / Twitter -->
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Gaia Cogumelos" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:title" content="Gaia Cogumelos — Fornecimento B2B de Ganoderma lucidum" />
     <meta property="og:description" content="Matéria-prima confiável de Reishi desidratado e em pó para marcas de suplementos e nutracêuticos." />
     <meta property="og:url" content="https://www.gaiacogumelos.com.br/" />
     <meta property="og:image" content="https://www.gaiacogumelos.com.br/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Gaia Cogumelos - Fornecimento B2B de Ganoderma lucidum" />
+    
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@gaiacogumelos" />
+    <meta name="twitter:title" content="Gaia Cogumelos — Fornecimento B2B de Ganoderma lucidum" />
+    <meta name="twitter:description" content="Matéria-prima confiável de Reishi desidratado e em pó para marcas de suplementos e nutracêuticos." />
+    <meta name="twitter:image" content="https://www.gaiacogumelos.com.br/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Gaia Cogumelos - Fornecimento B2B de Ganoderma lucidum" />
 
-    <!-- Robots -->
-    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <!-- Robots & SEO -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Performance & Security -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https:; connect-src 'self';" />
 
     <!-- Favicon -->
     <link rel="icon" href="logo.png" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <link rel="shortcut icon" type="image/png" href="logo.png" />
+    
     <script type="module" src="./src/main.ts"></script>
 
     <link rel="preload" as="image" href="/images/hero-reishi.jpg" />
@@ -271,6 +308,66 @@
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Gaia Cogumelos",
+      "description": "Fornecimento B2B de Ganoderma lucidum (Reishi) desidratado e em pó",
+      "url": "https://www.gaiacogumelos.com.br",
+      "logo": "https://www.gaiacogumelos.com.br/logo.png",
+      "image": "https://www.gaiacogumelos.com.br/og-image.jpg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-00-0000-0000",
+        "contactType": "sales",
+        "email": "comercial@gaiacogumelos.com.br",
+        "areaServed": "BR",
+        "availableLanguage": "Portuguese"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Paulínia",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://www.gaiacogumelos.com.br"
+      ],
+      "foundingDate": "2024",
+      "numberOfEmployees": "1-10",
+      "industry": "Food Production",
+      "keywords": "ganoderma lucidum, reishi, cogumelos medicinais, fornecimento B2B, matéria prima, suplementos",
+      "serviceArea": {
+        "@type": "Country",
+        "name": "Brazil"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Produtos Gaia Cogumelos",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Reishi desidratado (lamelas/cortes)",
+              "description": "Secagem controlada; umidade alvo ≤ 12%; ideal para maceração e infusões"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product", 
+              "name": "Pó de Reishi",
+              "description": "Granulometria sob demanda; indicado para cápsulas, blends e chás"
+            }
+          }
+        ]
+      }
+    }
     </script>
   </body>
 </html>
