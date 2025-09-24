@@ -3,13 +3,11 @@ export const tailwindConfig = {
   theme: {
     extend: {
       colors: {
-        brand: {
           forest: '#1B4332',   // verde profundo
           leaf: '#40916C',     // verde médio vibrante
           mint: '#95D5B2',     // verde claro fresco
           cream: '#F6F4EB',    // neutro claro
           stone: '#3D3D3D',    // cinza escuro profissional
-        },
       },
       fontFamily: {
         sans: [
