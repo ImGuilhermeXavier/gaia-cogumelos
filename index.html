@@ -25,7 +25,6 @@
     <link rel="icon" href="logo.png" />
     <script type="module" src="./src/main.ts"></script>
 
-
     <link rel="preload" as="image" href="/images/hero-reishi.jpg" />
   </head>
 
@@ -62,12 +61,32 @@
             <a href="#cotacao" class="inline-flex items-center justify-center rounded-xl bg-forest px-4 py-2 text-sm font-semibold text-white hover:bg-leaf shadow-soft">Solicitar cotação</a>
           </div>
 
-          <button id="btnMenu" class="md:hidden p-2 rounded-lg border border-black/10" aria-label="Abrir menu">
-            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <button id="btnMenu"
+            class="md:hidden p-2 rounded-lg border border-black/10"
+            aria-label="Abrir menu"
+            aria-controls="mobileMenu"
+            aria-expanded="false">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
           </button>
         </div>
       </div>
     </header>
+
+    <!-- Mobile Menu (Hambúrguer) -->
+    <div id="mobileMenu" class="md:hidden hidden border-b border-black/5 bg-white shadow-soft">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col gap-1" aria-label="Navegação móvel">
+        <a href="#solucoes" class="px-3 py-2 rounded-lg hover:bg-black/5">Soluções</a>
+        <a href="#setores" class="px-3 py-2 rounded-lg hover:bg-black/5">Setores atendidos</a>
+        <a href="#sobre" class="px-3 py-2 rounded-lg hover:bg-black/5">Sobre</a>
+        <a href="#contato" class="px-3 py-2 rounded-lg hover:bg-black/5">Contato</a>
+        <div class="pt-2 flex gap-2">
+          <a href="#contato" class="whitespace-nowrap flex-1 inline-flex items-center justify-center rounded-xl border border-brand-leaf/20 bg-white px-4 py-2 text-sm font-semibold text-brand-forest">Fale com o comercial</a>
+          <a href="#cotacao" class="flex-1 inline-flex items-center justify-center rounded-xl bg-brand-forest px-4 py-2 text-sm font-semibold text-white">Solicitar cotação</a>
+        </div>
+      </nav>
+    </div>
 
     <main id="conteudo">
       <!-- Hero -->
@@ -119,7 +138,7 @@
       </section>
 
       <!-- Setores atendidos -->
-      <section id="setores" class="py-20 bg-mint/30">
+      <section id="setores" class="py-20 bg-[#DFF1E7]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <header class="max-w-2xl">
             <h2 class="text-2xl sm:text-3xl font-bold text-stone">Setores atendidos</h2>
@@ -143,7 +162,7 @@
       </section>
 
       <!-- Sobre -->
-      <section id="sobre" class="py-20  bg-white ">
+      <section id="sobre" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <h2 class="text-2xl sm:text-3xl font-bold text-stone">Sobre a Gaia Cogumelos</h2>
@@ -169,7 +188,7 @@
       </section>
 
       <!-- Contato -->
-      <section id="contato" class="py-20 from-white bg-gradient-to-b to-mint/30">
+      <section id="contato" class="py-20 bg-gradient-to-b from-white to-mint/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid lg:grid-cols-2 gap-10">
             <div>
@@ -197,7 +216,7 @@
                 </div>
                 <div class="sm:col-span-2">
                   <label for="mensagem" class="block text-sm font-medium text-stone">Mensagem</label>
-                  <textarea id="mensagem" name="mensagem" rows="    4" required class="mt-1 w-full rounded-xl border border-black/10 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-leaf"></textarea>
+                  <textarea id="mensagem" name="mensagem" rows="4" required class="mt-1 w-full rounded-xl border border-black/10 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-leaf"></textarea>
                 </div>
               </div>
               <div class="mt-4">
@@ -207,7 +226,52 @@
           </div>
         </div>
       </section>
+
+      <!-- Footer -->
+      <footer class="bg-stone text-cream pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid md:grid-cols-3 gap-10">
+          <!-- Coluna 1 -->
+          <div>
+            <div class="flex items-center gap-3">
+              <div class="bg-cream p-px rounded-full">
+                <img src="./logo.png" alt="logo" width="36" height="36"/>
+              </div>
+              <span class="font-semibold tracking-wide text-lg">Gaia Cogumelos</span>
+            </div>
+            <p class="mt-4 text-sm text-cream/80 max-w-xs">Fornecimento B2B de Ganoderma lucidum desidratado e em pó, com qualidade e confiabilidade para sua marca.</p>
+          </div>
+          
+          <!-- Coluna 2 -->
+          <div>
+            <h3 class="text-sm font-semibold mb-4">Navegação</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#solucoes" class="hover:text-leaf">Soluções</a></li>
+              <li><a href="#setores" class="hover:text-leaf">Setores atendidos</a></li>
+              <li><a href="#sobre" class="hover:text-leaf">Sobre</a></li>
+              <li><a href="#contato" class="hover:text-leaf">Contato</a></li>
+            </ul>
+          </div>
+          
+          <!-- Coluna 3 -->
+          <div>
+            <h3 class="text-sm font-semibold mb-4">Contato</h3>
+            <ul class="space-y-2 text-sm">
+              <li>Email: <a href="mailto:comercial@gaiacogumelos.com.br" class="hover:text-leaf">comercial@gaiacogumelos.com.br</a></li>
+              <li>Telefone: (00) 0000-0000</li>
+              <li>Paulínia • São Paulo</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="border-t border-white/10 py-4 text-center text-xs text-cream/60">
+          © <span id="year"></span> Gaia Cogumelos. Todos os direitos reservados.
+        </div>
+      </footer>
     </main>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
 
