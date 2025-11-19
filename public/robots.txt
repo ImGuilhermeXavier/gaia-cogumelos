@@ -1,0 +1,59 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.gaiacogumelos.com.br/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Block access to sensitive files and directories
+Disallow: /src/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /yarn.lock
+Disallow: /tsconfig.json
+Disallow: /vite.config.ts
+Disallow: /tailwind.config.js
+Disallow: /*.ts$
+Disallow: /*.json$
+Disallow: /*.md$
+Disallow: /dist/
+
+# Allow access to important files
+Allow: /logo.webp
+Allow: /reishi.webp
+Allow: /gaia-logo-full.webp
+Allow: /favicon.ico
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Common bot-specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot  
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Block problematic bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
