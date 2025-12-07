@@ -61,6 +61,11 @@
     <link rel="icon" href="logo.webp" />
     <link rel="apple-touch-icon" href="logo.webp" />
     <link rel="shortcut icon" type="image/webp" href="logo.webp" />
+
+    <!-- JSON-LD Structured Data -->
+    <link rel="alternate" type="application/ld+json" href="/schema-po-reishi.json" />
+    <link rel="alternate" type="application/ld+json" href="/schema-reishi-desidratado.json" />
+
     
     <script type="module" src="./src/main.ts"></script>
 
@@ -310,65 +315,7 @@
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Gaia Cogumelos",
-      "description": "Fornecimento B2B de Ganoderma lucidum (Reishi) desidratado e em pó",
-      "url": "https://www.gaiacogumelos.com.br",
-      "logo": "https://www.gaiacogumelos.com.br/logo.webp",
-      "image": "https://www.gaiacogumelos.com.br/gaia-logo-full.webp",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+55-00-0000-0000",
-        "contactType": "sales",
-        "email": "comercial@gaiacogumelos.com.br",
-        "areaServed": "BR",
-        "availableLanguage": "Portuguese"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bariri",
-        "addressRegion": "SP",
-        "addressCountry": "BR"
-      },
-      "sameAs": [
-        "https://www.gaiacogumelos.com.br"
-      ],
-      "foundingDate": "2024",
-      "numberOfEmployees": "1-10",
-      "industry": "Food Production",
-      "keywords": "ganoderma lucidum, reishi, cogumelos medicinais, fornecimento B2B, matéria prima, suplementos",
-      "serviceArea": {
-        "@type": "Country",
-        "name": "Brazil"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Produtos Gaia Cogumelos",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Reishi desidratado (lamelas/cortes)",
-              "description": "Secagem controlada; umidade alvo ≤ 12%; ideal para maceração e infusões"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product", 
-              "name": "Pó de Reishi",
-              "description": "Granulometria sob demanda; indicado para cápsulas, blends e chás"
-            }
-          }
-        ]
-      }
-    }
-    </script>
+ 
   </body>
 </html>
 

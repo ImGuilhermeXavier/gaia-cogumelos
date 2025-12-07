@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Reishi desidratado (lamelas/cortes)",
+  "description": "Secagem controlada; umidade alvo ≤ 12%; ideal para maceração e infusões",
+  "image": "https://www.gaiacogumelos.com.br/reishi.webp",
+  "brand": {
+    "@type": "Brand",
+    "name": "Gaia Cogumelos"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.gaiacogumelos.com.br/",
+    "price": "0",
+    "priceCurrency": "BRL",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition"
+  }
+}
